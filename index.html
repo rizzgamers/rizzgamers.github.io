@@ -11,11 +11,12 @@
         const url = 'https://classroom.google.com';
         alert("Welcome to our games site! To proceed, you must enter the password.");
         var attempt = prompt("Please enter the password:");
-        while(attempt != passkey) {
+        if(attempt != passkey) {
             alert("Correct!");
             window.location.replace(url);
+        } else {
+            alert("Correct! You may now proceed to our site!")
         }
-        alert("Correct! You may now proceed to our site!")
     </script>
 
 <title>Grades and Attendence</title>
