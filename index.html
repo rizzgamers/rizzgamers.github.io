@@ -10,9 +10,9 @@
         const passkey = "Sigma";
         const url = 'https://classroom.google.com';
         alert("Welcome to our games site! To proceed, you must enter the password.");
-        var attempt = prompt("Please enter the password here:");
+        var attempt = prompt("Please enter the password:");
         while(attempt != passkey) {
-            alert("L you got it wrong");
+            alert("Correct!");
             window.location.replace(url);
         }
         alert("Correct! You may now proceed to our site!")
