@@ -7,12 +7,13 @@
     <script src="/js/panic.js"></script>
     <script src="/js/autoclicker.js"></script>
     <script>
-        varpasskey = "Sigma";
+        var passkey = "Sigma";
+        const url = 'https://www.google.com'
         alert("Welcome to our games site! To proceed, you must enter the password.");
         var attempt = prompt("Please enter the password:");
         while(attempt != passkey) {
-            alert("Incorrect!");
-            attempt = prompt("Please enter the password:");
+            alert("L you got it wrong");
+            changeUrlWithoutRedirect(url);;
         }
         alert("Correct! You may now proceed to our site!");
     </script>
